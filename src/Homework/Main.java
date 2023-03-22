@@ -17,8 +17,10 @@ public class Main {
       /*  Before sorting
  [Rectangle{a=3, b=3}, Circle{r=2}, Square{a=3}] */
 
-
-        //Collections.sort(figures);
+        Collections.sort(figures);
+        System.out.println(figures);
+        System.out.println("After sorting \n  " + figures);
+        System.out.println(figures);
 
         System.out.println("Rectangle  is " + figureInterface.getArea());
         System.out.println("Circle is " + figureInterface1.getArea());
@@ -36,8 +38,27 @@ public class Main {
             Square{a=3}
             */
 
-        }
 
+            for (FigureInterface s : figures) {
+                System.out.println(s.getArea());
+                  /*Rectangle{a=3, b=3}
+9.0
+12.56
+9.0
+Circle{r=2}
+9.0
+12.56
+9.0
+Square{a=3}
+9.0
+12.56
+9.0
+*/
+            }
+        }
     }
 }
+
+
+
 

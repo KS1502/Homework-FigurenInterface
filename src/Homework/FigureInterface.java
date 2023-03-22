@@ -1,6 +1,8 @@
 package Homework;
 
-public interface FigureInterface {
+import java.util.List;
+
+public interface FigureInterface  {
      double getArea();
 
 }
